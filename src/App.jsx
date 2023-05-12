@@ -31,6 +31,7 @@ function App() {
         data={photos}
         endReached={getPhotos}
         overscan={200}
+        useWindowScroll
         itemContent={(index, photo) => {
           return <img key={index} width={250} height={400} src={photo.urls.small} alt={`Photo ${index}`} />
         }}
